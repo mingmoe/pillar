@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
         <IsPackable>false</IsPackable>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
@@ -11,6 +10,8 @@
 
         <RootNamespace>PillarOfPillar</RootNamespace>
         <PackageId>PillarOfPillar</PackageId>
+        <TargetFrameworks>netstandard2.0;net9.0</TargetFrameworks>
+
     </PropertyGroup>
 
     <ItemGroup>

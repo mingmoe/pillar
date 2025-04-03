@@ -1,10 +1,14 @@
 ﻿using System.Diagnostics;
+using Utopia.Core;
 
 namespace Pillar;
 
 public sealed partial class ClockGenerator
 {
     private readonly Stopwatch stopwatch = new();
+
+    [EmitEvent]
+    private readonly WeakEvent<EventArgs> _kickEvent = new();
 
     public long ElapsedMillisecondsSinceLastKick => stopwatch.ElapsedMilliseconds;
 

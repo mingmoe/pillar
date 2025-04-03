@@ -8,7 +8,6 @@ namespace PillarOfPillar;
 /// A sample source generator that creates C# classes based on the text file (in this case, Domain Driven Design ubiquitous language registry).
 /// When using a simple text file as a baseline, we can create a non-incremental source generator.
 /// </summary>
-[Generator]
 public class SourceGeneratorWithAdditionalFiles : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
