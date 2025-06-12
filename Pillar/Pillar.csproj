@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../FNA/FNA.Core.csproj" />
+    <ProjectReference Include="../Autofac.Extension/Autofac.Extension/Autofac.Extension.csproj" />
+    <ProjectReference Include="../UniversalNet/src/UniversalNet.Kestrel/UniversalNet.Kestrel.csproj" />
+    <ProjectReference Include="../UniversalNet/src/UniversalNet.MemoryPack/UniversalNet.MemoryPack.csproj" />
+    <ProjectReference Include="../UniversalI18n/UniversalI18n/UniversalI18n.csproj" />
+    <ProjectReference Include="../PillarOfPillar/PillarOfPillar.csproj"
+                      OutputItemType="Analyzer">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

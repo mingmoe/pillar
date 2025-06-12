@@ -1,0 +1,12 @@
+[submodule "FNA"]
+	path = FNA
+	url = https://github.com/FNA-XNA/FNA
+[submodule "UniversalNet"]
+	path = UniversalNet
+	url = https://github.com/mingmoe/UniversalNet
+[submodule "Autofac.Extension"]
+	path = Autofac.Extension
+	url = https://github.com/mingmoe/Autofac.Extension
+[submodule "UniversalI18n"]
+	path = UniversalI18n
+	url = https://github.com/mingmoe/UniversalI18n

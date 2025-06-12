@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "parameters": "--include-transitive",
+  "projects": [
+    {
+      "path": "C:/Users/mingm/projects/project_fna/Pillar/Pillar/Pillar.csproj",
+      "frameworks": [
+        {
+          "framework": "net9.0",
+          "transitivePackages": [
+            {
+              "id": "Autofac",
+              "resolvedVersion": "8.3.0"
+            },
+            {
+              "id": "Autofac.Diagnostics.DotGraph",
+              "resolvedVersion": "2.0.0"
+            },
+            {
+              "id": "Autofac.Extensions.DependencyInjection",
+              "resolvedVersion": "10.0.0"
+            },
+            {
+              "id": "Humanizer.Core",
+              "resolvedVersion": "2.14.1"
+            },
+            {
+              "id": "JetBrains.Annotations",
+              "resolvedVersion": "2024.3.0"
+            },
+            {
+              "id": "MemoryPack",
+              "resolvedVersion": "1.21.4"
+            },
+            {
+              "id": "MemoryPack.Core",
+              "resolvedVersion": "1.21.4"
+            },
+            {
+              "id": "MemoryPack.Generator",
+              "resolvedVersion": "1.21.4"
+            },
+            {
+              "id": "MessageFormat",
+              "resolvedVersion": "7.1.3"
+            },
+            {
+              "id": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+              "resolvedVersion": "2.3.0"
+            },
+            {
+              "id": "Microsoft.AspNetCore.Http.Features",
+              "resolvedVersion": "2.3.0"
+            },
+            {
+              "id": "Microsoft.Bcl.AsyncInterfaces",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Common",
+              "resolvedVersion": "4.3.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.CSharp",
+              "resolvedVersion": "4.3.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.CSharp.Workspaces",
+              "resolvedVersion": "4.3.0"
+            },
+            {
+              "id": "Microsoft.CodeAnalysis.Workspaces.Common",
+              "resolvedVersion": "4.3.0"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.Configuration.Abstractions",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "resolvedVersion": "9.0.6"
+            },
+            {
+              "id": "Microsoft.Extensions.Diagnostics.Abstractions",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.FileProviders.Abstractions",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.FileProviders.Physical",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.FileSystemGlobbing",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.Hosting.Abstractions",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.Logging.Abstractions",
+              "resolvedVersion": "9.0.5"
+            },
+            {
+              "id": "Microsoft.Extensions.ObjectPool",
+              "resolvedVersion": "8.0.10"
+            },
+            {
+              "id": "Microsoft.Extensions.Options",
+              "resolvedVersion": "9.0.6"
+            },
+            {
+              "id": "Microsoft.Extensions.Primitives",
+              "resolvedVersion": "9.0.6"
+            },
+            {
+              "id": "System.CodeDom",
+              "resolvedVersion": "8.0.0"
+            },
+            {
+              "id": "System.Collections.Immutable",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Composition",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Composition.AttributedModel",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Composition.Convention",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Composition.Hosting",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Composition.Runtime",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Composition.TypedParts",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Diagnostics.DiagnosticSource",
+              "resolvedVersion": "8.0.1"
+            },
+            {
+              "id": "System.IO.Pipelines",
+              "resolvedVersion": "6.0.3"
+            },
+            {
+              "id": "System.Memory",
+              "resolvedVersion": "4.5.4"
+            },
+            {
+              "id": "System.Reflection.Metadata",
+              "resolvedVersion": "5.0.0"
+            },
+            {
+              "id": "System.Runtime.CompilerServices.Unsafe",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Text.Encoding.CodePages",
+              "resolvedVersion": "6.0.0"
+            },
+            {
+              "id": "System.Threading.Tasks.Extensions",
+              "resolvedVersion": "4.5.4"
+            },
+            {
+              "id": "Tomlyn",
+              "resolvedVersion": "0.19.0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
