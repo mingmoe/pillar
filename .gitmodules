@@ -1,6 +1,6 @@
 [submodule "FNA"]
 	path = FNA
-	url = https://github.com/FNA-XNA/FNA
+	url = https://github.com/mingmoe/FNA
 [submodule "UniversalNet"]
 	path = UniversalNet
 	url = https://github.com/mingmoe/UniversalNet
@@ -10,3 +10,7 @@
 [submodule "UniversalI18n"]
 	path = UniversalI18n
 	url = https://github.com/mingmoe/UniversalI18n
+[submodule "Moe.TextEngine"]
+	path = Moe.TextEngine
+	url = https://github.com/mingmoe/Moe.TextEngine
+	
