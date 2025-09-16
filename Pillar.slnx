@@ -4,6 +4,18 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="FNA/FNA.Core.csproj" />
+  <Project Path="Mingmoe.Demystifier/src/Mingmoe.Demystifier/Mingmoe.Demystifier.csproj" />
+  <Project Path="Moe.TextEngine/Moe.TextEngine/Moe.TextEngine.csproj" />
   <Project Path="Pillar/Pillar.csproj" />
   <Project Path="PillarOfPillar/PillarOfPillar.csproj" />
+  <Project Path="ResourcesManager/Moe.ResourcesManager/Moe.ResourcesManager.csproj" />
+  <Project Path="Sample/Sample.csproj" Id="265004f2-72bc-43b8-81b9-4435857da435" />
+  <Project Path="UniversalI18n/UniversalI18n.Cli/UniversalI18n.Cli.csproj" />
+  <Project Path="UniversalI18n/UniversalI18n.Helper/UniversalI18n.Helper.csproj" />
+  <Project Path="UniversalI18n/UniversalI18n/UniversalI18n.csproj" />
+  <Project Path="UniversalNet/src/UniversalNet.Autofac/UniversalNet.Autofac.csproj" />
+  <Project Path="UniversalNet/src/UniversalNet.Kestrel/UniversalNet.Kestrel.csproj" />
+  <Project Path="UniversalNet/src/UniversalNet.MemoryPack/UniversalNet.MemoryPack.csproj" />
+  <Project Path="UniversalNet/src/UniversalNet/UniversalNet.csproj" />
 </Solution>

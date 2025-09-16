@@ -14,3 +14,9 @@
 	path = Moe.TextEngine
 	url = https://github.com/mingmoe/Moe.TextEngine
 	
+[submodule "ResourcesManager"]
+	path = ResourcesManager
+	url = https://github.com/mingmoe/ResourcesManager
+[submodule "Mingmoe.Demystifier"]
+	path = Mingmoe.Demystifier
+	url = https://github.com/mingmoe/Mingmoe.Demystifier

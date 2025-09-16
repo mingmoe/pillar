@@ -11,9 +11,12 @@
 		<ProjectReference Include="../UniversalNet/src/UniversalNet.Kestrel/UniversalNet.Kestrel.csproj" />
 		<ProjectReference Include="../UniversalNet/src/UniversalNet.MemoryPack/UniversalNet.MemoryPack.csproj" />
 		<ProjectReference Include="../UniversalI18n/UniversalI18n/UniversalI18n.csproj" />
+		<ProjectReference Include="../Moe.TextEngine/Moe.TextEngine/Moe.TextEngine.csproj" />
 		<ProjectReference Include="../PillarOfPillar/PillarOfPillar.csproj" OutputItemType="Analyzer">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</ProjectReference>
+		<ProjectReference Include="..\Mingmoe.Demystifier\src\Mingmoe.Demystifier\Mingmoe.Demystifier.csproj" />
+		<ProjectReference Include="..\UniversalNet\src\UniversalNet.Autofac\UniversalNet.Autofac.csproj" />
 	</ItemGroup>
 </Project>
