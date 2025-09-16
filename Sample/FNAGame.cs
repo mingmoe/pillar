@@ -11,7 +11,7 @@ internal sealed class FNAGame : Game
 	public required ILogger<FNAGame> Logger { get; init; }
 
 	private SpriteBatch _spriteBatch = null!;
-	private Engine _fontEngine = null!;
+	private TextEngine _fontEngine = null!;
 
 	public GraphicsDeviceManager DeviceManager { get; init; }
 
@@ -42,9 +42,9 @@ internal sealed class FNAGame : Game
 	{
 		base.LoadContent();
 
-		_fontEngine.AddFont(new(new FileFontSource(@"resources/fonts/NotoEmoji-Regular.ttf"), 0));
-		_fontEngine.AddFont(new(new FileFontSource(@"resources/fonts/SarasaFixedSC-Regular.ttf"), 0));
-	}
+        _fontEngine.AddFont(new(new FileFontSource(@"resources/fonts/NotoEmoji-Regular.ttf"), 0));
+        _fontEngine.AddFont(new(new FileFontSource(@"resources/fonts/SarasaFixedSC-Regular.ttf"), 0));
+    }
 
 	protected override void UnloadContent()
 	{
@@ -68,10 +68,10 @@ internal sealed class FNAGame : Game
 		{
 			FontOptions = new FontOptions()
 			{
-				PixelHeight = 32,
-				PixelWidth = 32,
+				PixelHeight = 22,
+				PixelWidth = 22,
 			},
-			Text = "Hello World!西郊有密林，助君出重围。😄",
+			Text = "Hello World.西郊有密林，助君出重围。😄",
 			ShapeOptions = new()
 			{
 				Direction = TextDirection.LeftToRight,
@@ -80,22 +80,20 @@ internal sealed class FNAGame : Game
 			},
 		};
 
-        //var size = _fontEngine.EstimateSize(shapeRun);
+        var size = _fontEngine.MeasureSize(shapeRun);
 
         _fontEngine.DrawString(
 				shapeRun,
 				new(0, 0),
 			_spriteBatch);
-
-		/*
+		
 		_fontEngine.DrawString(
 				new ShapeRun(shapeRun.FontOptions, shapeRun.ShapeOptions)
 				{
-					Text = $"Estimated size:{size.X}x{size.Y}"
+					Text = $"Box size:{size.X}x{size.Y}. Rendered by Moe.TextEngine."
 				},
 				new(0, size.Y),
 			_spriteBatch);
-		*/
 
 		_spriteBatch.End();
 	}
