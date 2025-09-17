@@ -11,7 +11,7 @@ internal sealed class FNAGame : Game
 	public required ILogger<FNAGame> Logger { get; init; }
 
 	private SpriteBatch _spriteBatch = null!;
-	private TextEngine _fontEngine = null!;
+	private RenderEngine _fontEngine = null!;
 
 	public GraphicsDeviceManager DeviceManager { get; init; }
 
