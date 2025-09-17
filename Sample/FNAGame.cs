@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Moe.TextEngine;
+using NLog.Layouts;
 using Color = Microsoft.Xna.Framework.Color;
 
 namespace Sample;
@@ -12,6 +13,7 @@ internal sealed class FNAGame : Game
 
 	private SpriteBatch _spriteBatch = null!;
 	private RenderEngine _fontEngine = null!;
+	private LayoutEngine _layoutEngine = null!;
 
 	public GraphicsDeviceManager DeviceManager { get; init; }
 
@@ -35,6 +37,7 @@ internal sealed class FNAGame : Game
 			RasterizerEngine = new FreeTypeEngine(),
 			ShapeEngine = new HarfbuzzShapeEngine(),
 		};
+        _layoutEngine = new(_fontEngine);
 		base.Initialize();
 	}
 
@@ -71,30 +74,26 @@ internal sealed class FNAGame : Game
 				PixelHeight = 22,
 				PixelWidth = 22,
 			},
-			Text = "Hello World.西郊有密林，助君出重围。😄",
+			Text = "Hello World.😄西郊有密林，助君出重围。",
 			ShapeOptions = new()
 			{
 				Direction = TextDirection.LeftToRight,
-				Language = "zh-CN",
+				Region = "zh-CN",
 				Script = "Hans"
 			},
 		};
 
-        var size = _fontEngine.MeasureSize(shapeRun);
+        int yPen = 0;
 
-        _fontEngine.DrawString(
-				shapeRun,
-				new(0, 0),
-			_spriteBatch);
+        var layouts = _layoutEngine.SplitLines(shapeRun, 200);
+
+		foreach(var layout in layouts)
+        {
+			_fontEngine.DrawString(layout, new(0,yPen), _spriteBatch);
+
+            yPen += shapeRun.FontOptions.PixelHeight;
+        }
 		
-		_fontEngine.DrawString(
-				new ShapeRun(shapeRun.FontOptions, shapeRun.ShapeOptions)
-				{
-					Text = $"Box size:{size.X}x{size.Y}. Rendered by Moe.TextEngine."
-				},
-				new(0, size.Y),
-			_spriteBatch);
-
 		_spriteBatch.End();
 	}
 }
