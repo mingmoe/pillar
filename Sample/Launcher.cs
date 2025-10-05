@@ -8,7 +8,6 @@ using NLog.Extensions.Logging;
 using Pillar;
 using System.Diagnostics;
 using System.Reflection;
-using Utopia.Core;
 
 namespace Sample;
 
